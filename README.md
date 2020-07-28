@@ -3,7 +3,7 @@
 **Features**
 
 - JIRA Cloud (\*.atlassian.net)
-- Opens any atlassian links in the Choosy appliation
+- Opens any atlassian links in the Choosy appliation (https://www.choosyosx.com/)
 - Ignores `mailto:` links
 
 ---
