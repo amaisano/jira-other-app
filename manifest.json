@@ -3,6 +3,7 @@
   "version": "1.0",
   "description": "Opens JIRA links with the Choosy browser. Based off https://github.com/Unibozu/jira-new-tab extension.",
   "manifest_version": 2,
+  "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": [
