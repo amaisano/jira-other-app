@@ -7,16 +7,17 @@ function onClick(ev) {
   if (a) {
     const href = a.href;
 
-    if (isExternalHref(href)) {
+    if (isJiraHref(href)) {
       ev.preventDefault();
-      window.open(href);
+      const url = "x-choosy://open/" + href;
+      window.location.href = url;
     }
   }
 }
 
 /**
- * Return `true` is the link is external and should be opened in a new tab
+ * Return `true` is the link is for Jira and should be opened in Choosy
  */
-function isExternalHref(href) {
+function isJiraHref(href) {
   return !/\.atlassian\.(net|com)/g.test(href) && !/^mailto:/.test(href);
 }
